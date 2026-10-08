@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Katenge | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Microbe&display=swap');
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Major+Mono+Display&family=Rubik+Microbe&display=swap');
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Major+Mono+Display&family=Orbitron:wght@400..900&family=Rubik+Microbe&display=swap');
+</style>
+
+
+
+</head>
+<body>
+    <section class="section">
+<video autoplay muted loop playsinline class="bg-video">
+<source src="videos/Gym_Vid.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+    
+<nav> 
+    <div class="h2">
+        <img src="Images/Gym_logo_2.jpg" class="logo"> <p>MusclePedia <p></p> 
+    </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#dietPlans">Contact Us</a></li>
+                <li><a href="#gymworkouts">Gym Workouts</a></li>
+                <li><a href="#contact">Diet Plans</a></li>
+            </ul>
+    
+
+
+</nav><br><br><br><br><br>
+<div class="head">
+ <h1>Build Strength. <br> Tranform Your body.<br></h1>
+    <p class="subhead">Live Better.</p>
+ </div>
+</section>
+
+
+<section class="stats-section">
+<div class="stat-card">
+    <h3 class="stat-number"><span class="counter" data-target="100">0</span>+</h3><br>
+    <p class="stat-label">Workouts to explore</p>
+    
+    </div>
+
+<div class="stat-card">
+<h3 class="stat-number"><span class="counter" data-target="50">0</span>+</h3><br>
+<p class="stat-label">Diet Plans or every goal</p>
+</div>
+
+
+<div class="stat-card">
+<h3 class="stat-number"><span class="counter" data-target="10">0</span>+</h3>
+<br><p class="stat-label">Fitness Goals & Counting</p>
+
+</div>
+
+
+<div class="stat-card">
+<h3 class="stat-number">24/7</span></h3><br>
+<p class="stat-label">Motivation to keep you going</p>
+</div>
+</section><br><br>
+
+<section class="section-3"> 
+       <div class="div_c"> <img src="Images/cover-img1.jpg" class="cover-img">
+        <h3 class="overlay-text">Strength</h3>
+</div>
+    
+<div class="div_c">
+   
+        <img src="Images/cover-img2.jpg" class="cover-img">
+        <h3 class="overlay-text">Cardio</h3>
+    </div>
+
+   <div class="div_c">
+        <img src="Images/cover-img3.jpg" class="cover-img">
+        <h3 class="overlay-text">Yoga</h3>
+    </div>
+
+   <div class="div_c">
+        <img src="Images/cover-img3.jpg" class="cover-img">
+        <h3 class="overlay-text">Yoga</h3>
+    </div>
+
+
+
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () =>{
+const counters = document.querySelectorAll(".counter");
+const animationSpeed = 200; 
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const current = parseInt(counter.innerText);
+
+        const increment = Math.ceil(target/animationSpeed);
+
+        if(current < target) {
+            counter.innerText = current + increment ;
+            setTimeout(updateCount, 20);
+        }
+        else{
+            counter.innerText= target;
+        }
+    }
+    updateCount();
+});
+
+});
+
+</script>
+
+
+
+</body>
+</html>

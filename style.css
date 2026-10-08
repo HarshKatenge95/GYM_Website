@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: white;
+    color:white;
+    position: absolute;
+}
+
+.section{
+position: relative; 
+height:80vh;    
+overflow: hidden  ;
+}
+
+.bg-video{
+      position: absolute;
+      width: 100%;
+      object-fit: cover;
+      z-index: 0;      
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1;
+
+}
+
+
+nav {
+    position: relative;
+    z-index: 2;
+    display:flex;
+    justify-content: flex-end;
+    padding: 25px 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;  
+    list-style: none;
+    margin-left: auto;
+    
+    border-radius: 20%;
+    margin: 0%;
+    padding: 15px 20px; 
+    font-family:'Orbitron';
+    font-weight: bold;
+    
+
+}
+
+nav a{
+    color:orange;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.h2 {
+    
+    color:greenyellow;
+    font-size: 35px;
+    margin-right: auto;
+    font-family: 'major mono display';
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    
+}
+
+
+
+.head{
+    margin-left:8%;
+    margin-bottom:0%;
+}
+h1{
+    color: whitesmoke;
+    
+    font-size:400%;
+    font-family:'Black Ops One','sans-serif';
+}
+.subhead {
+    font-size:360%;
+    font-weight: bold;
+    color: yellowgreen;
+    
+    font-family: 'Rubik Microbe', 'Sans-serif';
+    
+}
+
+
+
+
+
+.logo{
+    border-radius: 50%;
+    height: 80px;
+    width:90px;
+    
+}
+
+
+.stats-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.stat-card{
+    text-align: center;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.stat-number{
+    font-family: 'Major Mono Display';
+    font-size:25px;
+    color:yellowgreen;
+    font-weight:bold;
+
+}
+.stat-label{
+    color:black;
+    font-size:16px;
+    text-transform: uppercase;
+    margin: 0px;
+    letter-spacing: 1px;
+    font-family:'Orbitron' ;
+
+}
+.section-3{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 460px;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+
+.cover-img{
+height:360px;
+width: 250px;
+box-shadow: 0 10px 36px yellowgreen;
+z-index:0;
+}
+
+.div_c{
+    position:relative;
+    transition: transform 0.3s ease, box-shadow 0,3s ease;
+    cursor: pointer;
+}
+
+.div_c:hover{
+transform: scale(1.06);
+}
+
+
+.overlay-text{
+color:whitesmoke;
+font-family: 'Orbitron';
+position: absolute;
+z-index: 2;
+margin:0;
+top:320px;
+left:10px;
+font-size:30px;
+
+}
